@@ -46,7 +46,7 @@ http
 		res.writeHead(statusCode, { "Content-Type": mimeType })
 		file.stream.pipe(res)
 
-		console.log(`${req.method} ${req.url} ${statusCode}`)
+		console.log(`${req.method} ${statusCode} ${req.url}`)
 	})
 	.listen(PORT)
 

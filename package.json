@@ -1,4 +1,12 @@
 {
     "name": "create-react-app-but-i-did-it-myself-yay",
-    "type": "module"
+    "type": "module",
+    "scripts": {
+        "transpile-watch": "swc ./src/entry.js -o public/build-output/entry.js -s -w"
+    },
+    "devDependencies": {
+        "@swc/cli": "^0.8.1",
+        "@swc/core": "^1.15.30",
+        "chokidar": "^5.0.0"
+    }
 }
